@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<RelativeLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_weight="2">
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:id="@+id/mainRelativeLayout1">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="CPU"
+				android:layout_width="wrap_content"
+				android:id="@+id/mainTextView1"/>
+
+			<Spinner
+				android:layout_height="30dp"
+				android:layout_width="wrap_content"
+				android:layout_toRightOf="@id/mainTextView1"
+				android:id="@+id/CPUsl"/>
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="声卡"
+				android:layout_width="wrap_content"
+				android:layout_toRightOf="@id/CPUsl"
+				android:id="@+id/mainTextView2"/>
+
+			<Spinner
+				android:layout_height="30dp"
+				android:layout_width="wrap_content"
+				android:layout_toRightOf="@id/mainTextView2"
+				android:id="@+id/SOUNDsl"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/mainRelativeLayout1"
+			android:id="@+id/mainRelativeLayout2">
+
+			<CheckBox
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/HDAch"
+				android:text="hda"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:layout_width="match_parent"
+				android:layout_toRightOf="@id/HDAch"
+				android:id="@+id/HDAet"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/mainRelativeLayout2"
+			android:id="@+id/mainRelativeLayout3">
+
+			<CheckBox
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/HDBch"
+				android:text="hdb"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:layout_width="match_parent"
+				android:layout_toRightOf="@id/HDBch"
+				android:id="@+id/HDBet"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/mainRelativeLayout3"
+			android:id="@+id/mainRelativeLayout4">
+
+			<CheckBox
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/CDRch"
+				android:text="cdrom"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:layout_width="match_parent"
+				android:layout_toRightOf="@id/CDRch"
+				android:id="@+id/CDRet"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/mainRelativeLayout4"
+			android:id="@+id/mainRelativeLayout5">
+
+			<CheckBox
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:id="@+id/HDDch"
+				android:text="hdd"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:ems="10"
+				android:layout_width="match_parent"
+				android:layout_toRightOf="@id/HDDch"
+				android:id="@+id/HDDet"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/mainRelativeLayout5"
+			android:id="@+id/mainRelativeLayout6">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="运存(0M)"
+				android:layout_width="90dp"
+				android:id="@+id/memsizet"/>
+
+			<SeekBar
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent"
+				android:layout_toRightOf="@id/memsizet"
+				android:id="@+id/MEMseek"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:layout_height="wrap_content"
+			android:layout_width="match_parent"
+			android:layout_below="@id/mainRelativeLayout6"
+			android:id="@+id/mainRelativeLayout7">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:text="VNC端口"
+				android:layout_width="wrap_content"
+				android:id="@+id/mainTextView3"/>
+
+			<EditText
+				android:layout_height="wrap_content"
+				android:inputType="number"
+				android:ems="10"
+				android:layout_width="match_parent"
+				android:layout_toRightOf="@id/mainTextView3"
+				android:id="@+id/VNCet"/>
+
+		</RelativeLayout>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="启动"
+			android:layout_below="@id/mainRelativeLayout7"
+			android:id="@+id/BOOTbtn"/>
+
+	</RelativeLayout>
+
+	<TextView
+		android:layout_height="wrap_content"
+		android:text="QEMU"
+		android:textAppearance="?android:attr/textAppearanceSmall"
+		android:layout_width="match_parent"
+		android:layout_weight="8"
+		android:textColor="#10ED00"
+		android:background="#000000"
+		android:id="@+id/cmdt"/>
+
+</LinearLayout>
+
